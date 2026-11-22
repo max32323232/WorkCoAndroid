@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Encabezado -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/projects"
+        android:textColor="@color/primary"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <!-- Cuenta y cierre de sesión -->
+    <TextView
+        android:id="@+id/account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/logout"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logout" />
+
+    <!-- Acción principal -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_project" />
+
+    <!-- Estados: carga, sincronización, vacío y reintento -->
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@string/loading" />
+
+    <TextView
+        android:id="@+id/syncState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:accessibilityLiveRegion="polite" />
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/empty"
+        android:visibility="gone" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/retry"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/retry"
+        android:visibility="gone" />
+
+    <!-- Lista de proyectos (ocupa el espacio restante) -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp" />
+
+</LinearLayout>
