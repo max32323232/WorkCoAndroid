@@ -1,0 +1,28 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function autenticado() {
+      return request.auth != null;
+    }
+    function valido(d) {
+      return d.keys().hasAll(['userId', 'titulo', 'descripcion', 'categoria', 'estado'])
+        && d.keys().hasOnly(['userId', 'titulo', 'descripcion', 'categoria', 'estado'])
+        && d.userId is string && d.userId == request.auth.uid
+        && d.titulo is string && d.titulo.size() >= 1 && d.titulo.size() <= 80
+        && d.titulo.matches('.*[^\\s].*')
+        && d.descripcion is string && d.descripcion.size() >= 1 && d.descripcion.size() <= 500
+        && d.descripcion.matches('[\\s\\S]*[^\\s][\\s\\S]*')
+        && d.categoria is string && d.categoria.size() >= 1 && d.categoria.size() <= 40
+        && d.categoria.matches('.*[^\\s].*')
+        && d.estado in ['Activo', 'Completado', 'Archivado'];
+    }
+    match /proyectos/{proyectoId} {
+      allow read: if autenticado() && resource.data.userId == request.auth.uid;
+      allow create: if autenticado() && valido(request.resource.data);
+      allow update: if autenticado() && resource.data.userId == request.auth.uid
+        && request.resource.data.userId == resource.data.userId
+        && valido(request.resource.data);
+      allow delete: if autenticado() && resource.data.userId == request.auth.uid;
+    }
+  }
+}
