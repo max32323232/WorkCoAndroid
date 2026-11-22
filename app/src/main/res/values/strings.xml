@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Work.Co</string>
+    <string name="tagline">Organiza tus proyectos estudiantiles</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="register">Crear cuenta</string>
+    <string name="to_register">¿No tienes cuenta? Regístrate</string>
+    <string name="to_login">Ya tengo cuenta</string>
+    <string name="email">Correo electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="confirm">Confirmar contraseña</string>
+    <string name="projects">Mis proyectos</string>
+    <string name="new_project">Nuevo proyecto</string>
+    <string name="edit_project">Editar proyecto</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="empty">Todavía no tienes proyectos. Crea el primero.</string>
+    <string name="title">Título (1 a 80 caracteres)</string>
+    <string name="description">Descripción (1 a 500 caracteres)</string>
+    <string name="category">Categoría (1 a 40 caracteres)</string>
+    <string name="status">Estado</string>
+    <string name="save">Guardar proyecto</string>
+    <string name="cancel">Cancelar</string>
+    <string name="edit">Editar</string>
+    <string name="delete">Eliminar</string>
+    <string name="loading">Cargando…</string>
+    <string name="retry">Reintentar</string>
+    <string-array name="states">
+        <item>Activo</item><item>Completado</item><item>Archivado</item>
+    </string-array>
+</resources>
