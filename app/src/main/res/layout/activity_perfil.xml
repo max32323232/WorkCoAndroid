@@ -15,6 +15,16 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <!-- Volver a la pantalla principal -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVolver"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginBottom="8dp"
+            android:text="@string/perfil_volver" />
+
         <!-- Foto circular con placeholder -->
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/ivFoto"
