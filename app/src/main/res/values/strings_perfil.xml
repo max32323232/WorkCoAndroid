@@ -16,5 +16,7 @@
     <string name="perfil_eliminar_titulo">Eliminar proyecto</string>
     <string name="perfil_eliminar_mensaje">¿Eliminar «%1$s»? Esta acción no se puede deshacer.</string>
     <string name="perfil_sin_conexion">Sin conexión. Intenta cuando tengas internet.</string>
+    <string name="perfil_ir">Mi perfil</string>
+    <string name="perfil_volver">Volver</string>
     <string name="perfil_proyecto_eliminado">Proyecto eliminado.</string>
 </resources>
