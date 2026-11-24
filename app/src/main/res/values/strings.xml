@@ -32,6 +32,7 @@
     <string name="comunidad_volver">Volver</string>
     <string name="comunidad_vacio">Aún no hay proyectos de otros usuarios.</string>
     <string name="comunidad_autor">Autor: %1$s</string>
+    <string name="comunidad_subtitulo">Descubre en qué están trabajando otros estudiantes.</string>
     <string-array name="states">
         <item>Activo</item><item>Completado</item><item>Archivado</item>
     </string-array>
