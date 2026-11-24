@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="perfil_foto_desc">Foto de perfil</string>
+    <string name="perfil_acerca">Acerca de mí</string>
+    <string name="perfil_hint_descripcion">Cuéntanos sobre ti</string>
+    <string name="perfil_habilidades">Habilidades</string>
+    <string name="perfil_hint_habilidad">Nueva habilidad</string>
+    <string name="perfil_agregar">Agregar</string>
+    <string name="perfil_sin_habilidades">Aún no agregas habilidades.</string>
+    <string name="perfil_sin_proyectos">Todavía no tienes proyectos.</string>
+    <string name="perfil_guardando">Guardando…</string>
+    <string name="perfil_guardado">Guardado</string>
+    <string name="perfil_habilidad_repetida">Ya la agregaste</string>
+    <string name="perfil_limite_habilidades">Máximo %1$d habilidades</string>
+    <string name="perfil_quitar_habilidad">Quitar %1$s</string>
+    <string name="perfil_eliminar_titulo">Eliminar proyecto</string>
+    <string name="perfil_eliminar_mensaje">¿Eliminar «%1$s»? Esta acción no se puede deshacer.</string>
+    <string name="perfil_sin_conexion">Sin conexión. Intenta cuando tengas internet.</string>
+    <string name="perfil_proyecto_eliminado">Proyecto eliminado.</string>
+</resources>

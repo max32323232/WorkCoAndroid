@@ -23,6 +23,9 @@
     <string name="delete">Eliminar</string>
     <string name="loading">Cargando…</string>
     <string name="retry">Reintentar</string>
+    <string name="mensaje_hola">¡Hola, Android!</string>
+    <string name="presioname">Presióname</string>
+    <string name="titulo_opciones">Selecciona una opción</string>
     <string-array name="states">
         <item>Activo</item><item>Completado</item><item>Archivado</item>
     </string-array>
