@@ -33,6 +33,11 @@
             android:name=".MainActivity"
             android:exported="false" />
 
+        <!-- Pantalla perfil de usuario (Push) -->
+        <activity
+            android:name=".PerfilActivity"
+            android:exported="false" />
+
         <!-- Formulario para crear y editar proyectos -->
         <activity
             android:name=".ProyectoFormActivity"
