@@ -34,6 +34,9 @@ public class MainActivity extends BaseActivity implements ProyectoAdapter.Accion
             detenerEscucha(); adapter.mostrar(new ArrayList<>());
             auth.signOut(); navegar(LoginActivity.class);
         });
+        findViewById(R.id.profile).setOnClickListener(v -> {
+            if (exigirSesion()) startActivity(new Intent(this, PerfilActivity.class));
+        });
     }
 
     @Override protected void onStart() {

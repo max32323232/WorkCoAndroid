@@ -89,6 +89,9 @@ public class PerfilActivity extends BaseActivity implements ProyectoAdapter.Acci
             if (actionId == EditorInfo.IME_ACTION_DONE) { agregarHabilidad(); return true; }
             return false;
         });
+
+        // PASO 6: volver a la pantalla principal
+        findViewById(R.id.btnVolver).setOnClickListener(v -> finish());
     }
 
     @Override protected void onStart() {
