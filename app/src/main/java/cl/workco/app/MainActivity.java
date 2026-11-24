@@ -37,6 +37,9 @@ public class MainActivity extends BaseActivity implements ProyectoAdapter.Accion
         findViewById(R.id.profile).setOnClickListener(v -> {
             if (exigirSesion()) startActivity(new Intent(this, PerfilActivity.class));
         });
+        findViewById(R.id.community).setOnClickListener(v -> {
+            if (exigirSesion()) startActivity(new Intent(this, ComunidadActivity.class));
+        });
     }
 
     @Override protected void onStart() {

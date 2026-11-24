@@ -44,5 +44,9 @@
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
 
+        <activity
+            android:name=".ComunidadActivity"
+            android:exported="false" />
+
     </application>
 </manifest>

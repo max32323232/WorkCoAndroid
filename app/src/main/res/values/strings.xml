@@ -26,6 +26,12 @@
     <string name="mensaje_hola">¡Hola, Android!</string>
     <string name="presioname">Presióname</string>
     <string name="titulo_opciones">Selecciona una opción</string>
+
+    <string name="comunidad_ir">Ver proyectos de la comunidad</string>
+    <string name="comunidad_titulo">Proyectos de la comunidad</string>
+    <string name="comunidad_volver">Volver</string>
+    <string name="comunidad_vacio">Aún no hay proyectos de otros usuarios.</string>
+    <string name="comunidad_autor">Autor: %1$s</string>
     <string-array name="states">
         <item>Activo</item><item>Completado</item><item>Archivado</item>
     </string-array>
